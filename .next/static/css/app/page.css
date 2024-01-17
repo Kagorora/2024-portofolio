@@ -1,0 +1,82 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./app/styles/index.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.page-container {
+  background-color: #999d9e;
+  height: 100vh;
+  padding: 38px 50px;
+  /* Optional: Add a box shadow or other styling */
+}
+.page-container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-container .header .credits-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-container .header .credits-top .btn-text {
+  display: flex;
+  align-items: center;
+}
+.page-container .header .credits-top .credit {
+  display: block;
+  font-weight: 200;
+  font-size: 18px;
+  margin-right: 5px;
+}
+.page-container .header .credits-top .name {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.page-container .header .credits-top .name .codeBy {
+  padding-left: 0.3em;
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.page-container .header .credits-top .name .dennis {
+  padding-left: 0.3em;
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.page-container .header .credits-top .name .alainMaxime {
+  position: absolute;
+  left: 130px;
+  padding-left: 0.3em;
+}
+.page-container .header .credits-top .name:hover .name {
+  padding-left: 10px;
+}
+.page-container .header .credits-top .name:hover .codeBy {
+  transform: translateX(-100%);
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.page-container .header .credits-top .name:hover .dennis {
+  transform: translateX(-74px);
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.page-container .header .credits-top .name:hover .maxime {
+  transform: translateX(-65px);
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.page-container .header .credits-top .name:hover .alainMaxime {
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  transform: translateX(-65px);
+}
+.page-container .header .credits-top .copyright {
+  transition: transform 0.6s ease;
+  transform: rotate(0deg); /* Initial state */
+}
+.page-container .header .credits-top:hover .copyright {
+  transform: rotate(360deg);
+}
+.page-container .magnetic:hover {
+  background-color: red;
+  transform: scale(1.1); /* Increase the size on hover */
+}
+.page-container .magnetic {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
