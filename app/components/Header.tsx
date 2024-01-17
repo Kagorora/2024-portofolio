@@ -11,8 +11,8 @@ const Header = () => {
               <div className="name">
                 <span className="codeBy">Code by </span>
                 <span className="dennis">
-                  <span className="maxime"> Maxime</span>{' '}
-                  <span className="alainMaxime">Alain Kagorora</span>
+                  <span className="maxime">Maxime</span>{' '}
+                  <span className="alainMaxime">Kagorora</span>
                 </span>
               </div>
             </span>
