@@ -1,0 +1,92 @@
+.page-container {
+    background-color: #999d9e;
+    height: 100vh;
+    padding: 38px 50px;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .credits-top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .btn-text {
+                display: flex;
+                align-items: center;
+
+
+            }
+
+            .credit {
+                display: block;
+                font-weight: 200;
+                font-size: 18px;
+                margin-right: 5px;
+            }
+
+            p {
+                margin: 0px;
+                transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+            }
+
+            .name {
+                display: flex;
+                overflow: hidden;
+                white-space: nowrap;
+                position: relative;
+                transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+
+
+                .codeBy {
+                    padding-left: 0.3em;
+                }
+
+                .dennis {
+                    padding-left: 0.3em;
+                }
+
+                .alainMaxime {
+                    position: absolute;
+                    left: 130px;
+                    padding-left: 0.3em;
+                }
+
+                &:hover {
+                    .name {
+                        padding-left: 30px;
+                    }
+
+                    .codeBy {
+                        transform: translateX(-100%);
+                    }
+                    .dennis {
+                        transform: translateX(-65px);
+                    }
+
+                .alainMaxime {
+                    transform: translateX(-65px);
+                }
+
+                }
+
+            }
+
+            
+
+
+        }
+
+        .credits-top:hover {
+            .copyright {
+                transition: transform 0.6s ease;
+                /* Add a smooth transition effect */
+                transform: rotate(360deg);
+                /* Adjust the angle as needed */
+            }
+        }
+
+    }
+}
