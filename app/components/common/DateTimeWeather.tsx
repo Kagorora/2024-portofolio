@@ -13,7 +13,6 @@ const DateTimeWeather: React.FC = () => {
 
   useEffect(() => {
     getWeather('Kigali').then((data) => {
-      console.log('Weather Data:', data);
       const temperatureCelsius = data.main.temp - 273.15;
       setTemperature(temperatureCelsius);
       setWeatherIcon(data.weather[0].icon);

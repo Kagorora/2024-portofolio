@@ -5,7 +5,7 @@ const Intro = () => {
     <div className="intro-container">
       <div className="profile">I am awesome</div>
       <div className="physical-location">
-        <span>My Current Location</span>
+        <span>Current Location</span>
         <span>
           <DateTimeWeather />
         </span>
