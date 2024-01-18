@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 100px;
 }
 .page-container .header .credits-top {
   display: flex;
@@ -74,9 +75,35 @@
   transform: rotate(360deg);
 }
 .page-container .magnetic:hover {
-  background-color: red;
   transform: scale(1.1); /* Increase the size on hover */
 }
-.page-container .magnetic {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+.page-container .links-wrapper ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-container .links-wrapper ul li {
+  margin-left: 60px;
+}
+.page-container .intro-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-container .intro-container .propfile {
+  width: 75%;
+}
+.page-container .intro-container .physical-location {
+  width: 25%;
+  display: grid;
+  text-align: end;
+}
+.page-container .intro-container .physical-location span {
+  margin-bottom: 5px;
+}
+.page-container .intro-container .physical-location .weather-details {
+  display: flex;
+  align-items: center;
+  position: inherit;
+  justify-content: flex-end;
 }

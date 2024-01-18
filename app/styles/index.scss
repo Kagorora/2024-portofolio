@@ -8,6 +8,8 @@
     justify-content: space-between;
     align-items: center;
 
+    margin-bottom: 100px;
+
     .credits-top {
       display: flex;
       justify-content: center;
@@ -91,13 +93,50 @@
 
   
   .magnetic:hover {
-    background-color: red;
     transform: scale(1.1); /* Increase the size on hover */
   }
   
   /* Optional: Add a box shadow or other styling */
-  .magnetic {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+
+  .links-wrapper {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      li {
+        margin-left: 60px
+      }
+
+    }
+
+  }
+
+  .intro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .propfile {
+        width: 75%;
+    }
+
+    .physical-location {
+      width: 25%;
+      display: grid;
+      text-align: end;
+      span {
+        margin-bottom: 5px;
+      }
+
+      .weather-details {
+        display: flex;
+        align-items: center;
+        position: inherit;
+        justify-content: flex-end;
+      }
+    }
   }
   
 
