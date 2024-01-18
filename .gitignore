@@ -1,3 +1,27 @@
-/node_modules
+# Node.js
+node_modules/
 
-.env
+# Next.js build artifacts
+/.next/
+
+# IDE
+.vscode/
+
+# macOS
+.DS_Store
+
+# Log files
+*.log
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Cache directories
+.cache/

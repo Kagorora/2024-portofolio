@@ -19,7 +19,7 @@ const Header = () => {
           </a>
         </div>
       </div>
-      {/* <div>
+      <div className="links-wrapper">
         <ul>
           <li className="btn btn-link">
             <a
@@ -58,7 +58,7 @@ const Header = () => {
             </a>
           </li>
         </ul>
-      </div> */}
+      </div>
     </div>
   );
 };
