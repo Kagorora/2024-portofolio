@@ -33,8 +33,9 @@ const Header = () => {
                 data-strength="20"
                 data-strength-text="10"
               >
-                <span className="btn-text">
+                <span className="btn-text el">
                   <span className="btn-text-inner">Work</span>
+                  <div className="indicator"></div>
                 </span>
               </a>
             </li>
@@ -48,8 +49,9 @@ const Header = () => {
                 data-strength="20"
                 data-strength-text="10"
               >
-                <span className="btn-text">
+                <span className="btn-text el">
                   <span className="btn-text-inner">About</span>
+                  <div className="indicator"></div>
                 </span>
               </a>
             </li>
@@ -63,8 +65,9 @@ const Header = () => {
                 data-strength="20"
                 data-strength-text="10"
               >
-                <span className="btn-text">
+                <span className="btn-text el">
                   <span className="btn-text-inner">Contact</span>
+                  <div className="indicator"></div>
                 </span>
               </a>
             </li>
