@@ -74,6 +74,31 @@
 .page-container .header .credits-top:hover .copyright {
   transform: rotate(360deg);
 }
+.page-container .header .el {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  padding: 15px;
+  cursor: pointer;
+}
+.page-container .header .el:hover .indicator {
+  transform: scale(1);
+}
+.page-container .header .el .indicator {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 45px;
+  left: 50%;
+  background-color: white;
+  border-radius: 50%;
+  transform: scale(0) translateX(-50%);
+  transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.page-container .header a {
+  cursor: pointer;
+}
 .page-container .magnetic:hover {
   transform: scale(1.1); /* Increase the size on hover */
 }
