@@ -1,4 +1,4 @@
-import Magnetic from './common/Magnetic';
+import Magnetic from '../common/Magnetic';
 
 const Header = () => {
   return (

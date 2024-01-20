@@ -2,102 +2,10 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./app/styles/index.scss ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .page-container {
-  background-color: #999d9e;
+  background: linear-gradient(180deg, #708C93 0%, rgba(164, 176, 179, 0.71) 80.99%, rgba(165, 169, 170, 0.71) 100%), linear-gradient(180deg, #999D9E 0%, rgba(255, 255, 255, 0.71) 36.71%, rgba(255, 255, 255, 0.71) 64.17%, rgba(165, 169, 170, 0.71) 99.89%);
   height: 100vh;
   padding: 38px 50px;
   /* Optional: Add a box shadow or other styling */
-}
-.page-container .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 100px;
-}
-.page-container .header .credits-top {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.page-container .header .credits-top .btn-text {
-  display: flex;
-  align-items: center;
-}
-.page-container .header .credits-top .credit {
-  display: block;
-  font-weight: 200;
-  font-size: 18px;
-  margin-right: 5px;
-}
-.page-container .header .credits-top .name {
-  display: flex;
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-}
-.page-container .header .credits-top .name .codeBy {
-  padding-left: 0.3em;
-  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-}
-.page-container .header .credits-top .name .dennis {
-  padding-left: 0.3em;
-  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-}
-.page-container .header .credits-top .name .alainMaxime {
-  position: absolute;
-  left: 130px;
-  padding-left: 0.3em;
-}
-.page-container .header .credits-top .name:hover .name {
-  padding-left: 10px;
-}
-.page-container .header .credits-top .name:hover .codeBy {
-  transform: translateX(-100%);
-  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-}
-.page-container .header .credits-top .name:hover .dennis {
-  transform: translateX(-74px);
-  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-}
-.page-container .header .credits-top .name:hover .maxime {
-  transform: translateX(-65px);
-  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-}
-.page-container .header .credits-top .name:hover .alainMaxime {
-  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-  transform: translateX(-65px);
-}
-.page-container .header .credits-top .copyright {
-  transition: transform 0.6s ease;
-  transform: rotate(0deg); /* Initial state */
-}
-.page-container .header .credits-top:hover .copyright {
-  transform: rotate(360deg);
-}
-.page-container .header .el {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 1;
-  padding: 15px;
-  cursor: pointer;
-}
-.page-container .header .el:hover .indicator {
-  transform: scale(1);
-}
-.page-container .header .el .indicator {
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  top: 45px;
-  left: 50%;
-  background-color: white;
-  border-radius: 50%;
-  transform: scale(0) translateX(-50%);
-  transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
-}
-.page-container .header a {
-  cursor: pointer;
 }
 .page-container .magnetic:hover {
   transform: scale(1.1); /* Increase the size on hover */
@@ -131,4 +39,178 @@
   align-items: center;
   position: inherit;
   justify-content: flex-end;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.header .credits-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .credits-top .btn-text {
+  display: flex;
+  align-items: center;
+}
+.header .credits-top .credit {
+  display: block;
+  font-weight: 200;
+  font-size: 18px;
+  margin-right: 5px;
+}
+.header .credits-top .name {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.header .credits-top .name .codeBy {
+  padding-left: 0.3em;
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.header .credits-top .name .dennis {
+  padding-left: 0.3em;
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.header .credits-top .name .alainMaxime {
+  position: absolute;
+  left: 130px;
+  padding-left: 0.3em;
+}
+.header .credits-top .name:hover .name {
+  padding-left: 10px;
+}
+.header .credits-top .name:hover .codeBy {
+  transform: translateX(-100%);
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.header .credits-top .name:hover .dennis {
+  transform: translateX(-74px);
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.header .credits-top .name:hover .maxime {
+  transform: translateX(-65px);
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.header .credits-top .name:hover .alainMaxime {
+  transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  transform: translateX(-65px);
+}
+.header .credits-top .copyright {
+  transition: transform 0.6s ease;
+  transform: rotate(0deg); /* Initial state */
+}
+.header .credits-top:hover .copyright {
+  transform: rotate(360deg);
+}
+.header .el {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  padding: 15px;
+  cursor: pointer;
+}
+.header .el:hover .indicator {
+  transform: scale(1);
+}
+.header .el .indicator {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 45px;
+  left: 50%;
+  background-color: white;
+  border-radius: 50%;
+  transform: scale(0) translateX(-50%);
+  transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.header a {
+  cursor: pointer;
+}
+
+.description-container {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.description-container .description-left-container {
+  width: 82%;
+  height: 100%;
+}
+.description-container .description-left-container .image-container {
+  height: 80%;
+}
+.description-container .description-right-container {
+  width: 18%;
+  height: 100%;
+}
+
+.my-location-container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 60%, rgba(255, 255, 255, 0.2) 100%);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-time-weather {
+  text-align: center;
+}
+.date-time-weather .weather-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 27px;
+}
+.date-time-weather .label {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+.date-time-weather .location {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 14px;
+}
+.date-time-weather .weather-details .temperature {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sliding-text-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.sliding-text-container span {
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: inline-block;
+  padding-right: 20px; /* Adjust as needed for spacing between words */
+  animation: slideWords 25s linear infinite;
+  letter-spacing: 2px;
+}
+@keyframes slideWords {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

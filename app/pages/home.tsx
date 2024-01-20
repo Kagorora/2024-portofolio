@@ -1,9 +1,9 @@
-import LandingPage from './landingPage';
+import Index from '.';
 
 const Home = () => {
   return (
     <div>
-      <LandingPage />
+      <Index />
     </div>
   );
 };

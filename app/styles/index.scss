@@ -1,127 +1,7 @@
 .page-container {
-  background-color: #999d9e;
+  background: linear-gradient(180deg, #708C93 0%, rgba(164, 176, 179, 0.71) 80.99%, rgba(165, 169, 170, 0.71) 100%), linear-gradient(180deg, #999D9E 0%, rgba(255, 255, 255, 0.71) 36.71%, rgba(255, 255, 255, 0.71) 64.17%, rgba(165, 169, 170, 0.71) 99.89%);
   height: 100vh;
   padding: 38px 50px;
-
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin-bottom: 100px;
-
-    .credits-top {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .btn-text {
-        display: flex;
-        align-items: center;
-      }
-
-      .credit {
-        display: block;
-        font-weight: 200;
-        font-size: 18px;
-        margin-right: 5px;
-      }
-
-      .name {
-        display: flex;
-        overflow: hidden;
-        white-space: nowrap;
-        position: relative;
-        transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-
-        .codeBy {
-          padding-left: 0.3em;
-          transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-        }
-
-        .dennis {
-          padding-left: 0.3em;
-          transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-        }
-
-        .alainMaxime {
-          position: absolute;
-          left: 130px;
-          padding-left: 0.3em;
-        }
-
-
-        &:hover {
-          .name {
-            padding-left: 10px;
-          }
-
-          .codeBy {
-            transform: translateX(-100%);
-            transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-          }
-          .dennis {
-            transform: translateX(-74px);
-            transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-          }
-
-          .maxime {
-            transform: translateX(-65px);
-            transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-          }
-
-          .alainMaxime {
-            transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-            transform: translateX(-65px);
-          }
-
-        }
-      }
-    }
-
-.credits-top .copyright {
-    transition: transform 0.6s ease;
-    transform: rotate(0deg); /* Initial state */
-  
-  }
-  
-  .credits-top:hover .copyright {
-    transform: rotate(360deg);
-  }
-
-
-    .el{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        z-index: 1;
-        padding: 15px;
-        cursor: pointer;
-        &:hover{
-            .indicator{
-                transform: scale(1);
-            }
-        }
-        .indicator{
-            position: absolute;
-            width: 5px;
-            height: 5px;
-            top: 45px;
-            left: 50%;
-            background-color: white;
-            border-radius: 50%;
-            transform: scale(0) translateX(-50%);
-            transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
-        }
-    }
-    a{
-        cursor: pointer;
-    }
-
-
-
-  }
-
 
   
   .magnetic:hover {
@@ -173,3 +53,9 @@
   
 
 }
+
+@import '../components/Header/index';
+@import '../components/Description/index';
+@import '../components/MyLocation/index';
+@import '../components/DateTimeWeather/index';
+@import '../components/common/SlidingText/index';

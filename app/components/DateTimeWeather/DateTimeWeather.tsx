@@ -31,18 +31,21 @@ const DateTimeWeather: React.FC = () => {
 
   return (
     <div className="date-time-weather">
-      <div>Kigali, Rwanda {time}</div>
+      {temperature !== null && weatherIcon && (
+        <div className="weather-icon-container">
+          <img
+            src={`/icons/${weatherIcon}.png`} // Assuming icons are in the 'public/icons' folder
+            alt="Weather Icon"
+            width="50"
+            height="50"
+          />
+        </div>
+      )}
+      <p className="label">Current Location</p>
+      <div className="location">Kigali, Rwanda {time}</div>
       {temperature !== null && (
         <div className="weather-details">
-          {weatherIcon && (
-            <img
-              src={`/icons/${weatherIcon}.png`} // Assuming icons are in the 'public/icons' folder
-              alt="Weather Icon"
-              width="50"
-              height="50"
-            />
-          )}
-          <span> {temperature.toFixed(0)}°C</span>
+          <span className="temperature"> {temperature.toFixed(0)} °C</span>
         </div>
       )}
     </div>
