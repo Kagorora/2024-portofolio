@@ -1,0 +1,25 @@
+.sliding-text-container {
+    overflow: hidden;
+    white-space: nowrap;
+    span {
+        font-size: 150px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        display: inline-block;
+        padding-right: 20px; /* Adjust as needed for spacing between words */
+        animation: slideWords 25s linear infinite;
+        letter-spacing: 2px;
+    }
+    
+    @keyframes slideWords {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    
+}
