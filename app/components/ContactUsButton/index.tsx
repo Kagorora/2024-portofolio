@@ -21,7 +21,7 @@ const ContactUsButton: FC<Props> = (props) => {
           .split('')
           .map(
             (char, i) =>
-              `<span style="transform:rotate(${i * 4.4}deg)">${char}</span>`
+              `<span style="transform:rotate(${i * 9}deg)">${char}</span>`
           )
           .join('');
       }
@@ -40,9 +40,9 @@ const ContactUsButton: FC<Props> = (props) => {
     <div className="rotation-container">
       <div className="circle">
         <div className="text">
-          <p>- contact us - contact us - contact us - contact us -</p>
+          <p>- CONTACT US   -   CONTACT US - CONTACT US - CONTACT US -</p>
         </div>
-        <Image src={avatar} alt="Weather Icon" width="50" height="50" />
+        <Image src={avatar} alt="Weather Icon" width="71" height="71" />
       </div>
     </div>
   );
